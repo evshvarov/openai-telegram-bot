@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="interoperability-sample.ZPM">
+  <Document name="telegram-gpt.ZPM">
     <Module>
-      <Name>interoperability-sample</Name>
-      <Description>A simple IRIS interoperability application - reads data from Reddit and filter it.</Description>
-      <Version>0.2.4</Version>
+      <Name>telegram-gpt</Name>
+      <Description>Production that enables Telegram bot to talk to ChatGPT</Description>
+      <Version>0.1.0</Version>
       <Packaging>module</Packaging>
       <Dependencies>
         <ModuleReference>
@@ -15,12 +15,17 @@
           <Name>objectscript-json-trace-viewer</Name>
           <Version>1.0.*</Version>
         </ModuleReference>
+        <ModuleReference>
+          <Name>telegram-adapter</Name>
+          <Version>*</Version>
+        </ModuleReference>
+        <ModuleReference>
+          <Name>iris-openai</Name>
+          <Version>*</Version>
+        </ModuleReference>
       </Dependencies>
       <SourcesRoot>src</SourcesRoot>
-      <Resource Name="Ens.Config.DefaultSettings.ESD"/>
-      <Resource Directory="i14y" Name="TestLookupTable.LUT"/>
-      <Resource Name="dc.Reddit.PKG"/>
-      <Resource Name="dc.Demo.PKG"/>
+      <Resource Name="shvarov.telegramgpt.PKG"/>
       <SystemRequirements Version=">=2020.1" Interoperability="enabled" />
     </Module>
   </Document>
