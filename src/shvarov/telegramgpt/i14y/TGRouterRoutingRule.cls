@@ -9,7 +9,7 @@ XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 <ruleDefinition alias="" context="EnsLib.MsgRouter.RoutingEngine" production="shvarov.telegramgpt.i14y.TgGptProduction">
 <ruleSet name="" effectiveBegin="" effectiveEnd="">
 <rule name="">
-<constraint name="source" value="shvarov.telegramgpt.i14y.TGInService"></constraint>
+<constraint name="source" value="Telegram.InboundService"></constraint>
 <when condition="1" comment="">
 <send transform="shvarov.telegramgpt.i14y.Tg2Gpt" target="St.OpenAi.BO.Api.Connect"></send>
 </when>
@@ -19,3 +19,4 @@ XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 }
 
 }
+

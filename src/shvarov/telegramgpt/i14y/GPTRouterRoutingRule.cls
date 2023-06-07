@@ -10,7 +10,7 @@ XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 <ruleSet name="" effectiveBegin="" effectiveEnd="">
 <rule name="" disabled="false">
 <when condition="1" comment="">
-<send transform="shvarov.telegramgpt.i14y.GPT2Tg" target="Telegram.BusinessOperation"></send>
+<send transform="shvarov.telegramgpt.i14y.GPT2Tg" target="Telegram.OutboundOperation"></send>
 </when>
 </rule>
 </ruleSet>
@@ -18,3 +18,4 @@ XData RuleDefinition [ XMLNamespace = "http://www.intersystems.com/rule" ]
 }
 
 }
+
