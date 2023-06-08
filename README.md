@@ -49,8 +49,11 @@ $ docker-compose up -d
 Open the [production](http://localhost:52797/csp/user/EnsPortal.ProductionConfig.zen?PRODUCTION=shvarov.telegramgpt.i14y.TgGptProduction).
 
 Put your bot's Telegram Token into Telegram business service and Telegram Business operation both:
+<img width="763" alt="Screenshot 2023-06-07 at 4 55 19 PM" src="https://github.com/evshvarov/openai-telegram-bot/assets/2781759/21459de3-0496-4f69-9374-2fc40518e5c3">
+
 
 Also initialize St.OpenAi.BO.Api.Connect operation with your Chat GPT API key and Organisation id:
+<img width="770" alt="Screenshot 2023-06-07 at 4 56 08 PM" src="https://github.com/evshvarov/openai-telegram-bot/assets/2781759/edae4e49-3b1b-49c4-9763-19901e9b490e">
 
 Start the production
 
