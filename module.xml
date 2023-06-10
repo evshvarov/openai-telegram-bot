@@ -33,7 +33,7 @@
          <Arg>${TgToken}</Arg>
          <Arg>${GPTKey}</Arg>
       </Invoke>
-      <Invoke Class="ENS.Director" Method="StartProduction" >
+      <Invoke Class="Ens.Director" Method="StartProduction" >
         <Arg>shvarov.telegramgpt.i14y.TgGptProduction</Arg>
       </Invoke>
     </Module>
