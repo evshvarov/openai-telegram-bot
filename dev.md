@@ -98,3 +98,8 @@ do $System.OBJ.Export("SYS*.GBL","/dev/app/src/gbl/SYS.xml",,.errors)
 ```
 d ##class(SourceControl.Git.API).Configure()
 ```
+
+## load env variable
+w $system.Util.GetEnviron("OPENAPI_KEY")
+
+##class(shvarov.telegramgpt.Setup).Init($system.Util.GetEnviron("TG_BOT_TOKEN"),$system.Util.GetEnviron("OPENAPI_KEY"))

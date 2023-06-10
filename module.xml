@@ -27,6 +27,12 @@
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="shvarov.telegramgpt.PKG"/>
       <SystemRequirements Version=">=2020.1" Interoperability="enabled" />
+      <Default Name="TgToken" Value="Telegram Token" />
+      <Default Name="GPTKey" Value="GPTKey" />
+      <Invoke Class="shvarov.telegramgpt.Setup" Method="Init" >
+         <Arg>${TgToken}</Arg>
+         <Arg>${GPTKey}</Arg>
+      </Invoke>
     </Module>
   </Document>
 </Export>
