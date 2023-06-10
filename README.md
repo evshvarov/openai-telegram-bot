@@ -21,8 +21,9 @@ USER>    s r=##class(%Net.HttpRequest).%New(),r.Server="pm.community.intersystem
 
 Open IRIS Namespace with Interoperability Enabled.
 Open Terminal and call:
+```
 USER>zpm "install telegram-gpt -D TgToken=your_telegram_token -D GPTKey=your_ChatGPT_key"
-
+```
 ## Installation: Docker
 Clone/git pull the repo into any local directory
 
