@@ -5,8 +5,6 @@ Property ChatId As %String;
 
 Property Text As %VarString;
 
-Property Data As %DynamicAbstractObject;
-
 Method %OnNew(data As %DynamicAbstractObject) As %Status
 {
     Set ..Data = $G(data)
