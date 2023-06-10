@@ -30,6 +30,12 @@ Clone/git pull the repo into any local directory
 $ git clone https://github.com/evshvarov/openai-telegram-bot
 ```
 
+Create .env file in the root directory of the repo with:
+
+TG_BOT_TOKEN=Your_telegrambot_token
+OPENAPI_KEY=Your_chatGPT_key
+
+
 Open the terminal in this directory and run:
 
 ```
@@ -42,7 +48,11 @@ $ docker-compose build
 $ docker-compose up -d
 ```
 
+4. Open Terminal and call:
 
+```
+USER>d ##class(shvarov.telegramgpt.Setup).Init($system.Util.GetEnviron("TG_BOT_TOKEN"),$system.Util.GetEnviron("OPENAPI_KEY"))
+```
 
 ## How to Run the Service
 
