@@ -105,4 +105,3 @@ w $system.Util.GetEnviron("OPENAPI_KEY")
 d ##class(shvarov.telegramgpt.Setup).Init($system.Util.GetEnviron("TG_BOT_TOKEN"),$system.Util.GetEnviron("OPENAPI_KEY"))
 
 
-zpm "install telegram-gpt -D TgToken=5634073686:AAGSeyuUDv9UoEOKXmjev52xJvnkQ5hO47g -D GPTKey=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 -v"
