@@ -32,6 +32,7 @@
       <Invoke Class="shvarov.telegramgpt.Setup" Method="Init" >
          <Arg>${TgToken}</Arg>
          <Arg>${GPTKey}</Arg>
+      </Invoke>
       <Invoke Class="ENS.Director" Method="StartProduction" >
         <Arg>shvarov.telegramgpt.i14y.TgGptProduction</Arg>
       </Invoke>
