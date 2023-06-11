@@ -44,4 +44,12 @@ ClassMethod Init(TgToken As %String, GPTKey As %String) As %Status
     return st
 }
 
+ClassMethod StartProduction()
+{
+    set prodClass = "shvarov.telegramgpt.i14y.TgGptProduction"
+    do ##class(%EnsembleMgr).SetAutoStart($namespace, prodClass)
+    job ##class(Ens.Director).StartProduction(prodClass)
 }
+
+}
+
