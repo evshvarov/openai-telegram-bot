@@ -12,7 +12,7 @@ XData DTL [ XMLNamespace = "http://www.intersystems.com/dtl" ]
 <transform sourceClass='shvarov.telegramgpt.i14y.TGMessage' targetClass='St.OpenAi.Msg.Chat.ChatRequest' create='new' language='objectscript' >
 <assign value='"gpt-3.5-turbo-0301"' property='target.Model' action='set' />
 <assign value='"user"' property='target.Messages.(1).Role' action='set' />
-<assign value='"What do you think about "_source.Text' property='target.Messages.(1).Content' action='set' />
+<assign value='source.Text' property='target.Messages.(1).Content' action='set' />
 </transform>
 }
 

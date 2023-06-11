@@ -8,8 +8,8 @@
       <Packaging>module</Packaging>
       <Dependencies>
         <ModuleReference>
-          <Name>sslclient</Name>
-          <Version>1.0.*</Version>
+          <Name>production-settings</Name>
+          <Version>*</Version>
         </ModuleReference>
         <ModuleReference>
           <Name>objectscript-json-trace-viewer</Name>
