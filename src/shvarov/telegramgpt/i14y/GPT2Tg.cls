@@ -14,7 +14,8 @@ ClassMethod GetChatId() As %String
     &sql(SELECT MessageBodyId into :msgId From Ens.MessageHeader
         WHERE SessionId=:sessionId
        )
-    return ##class(shvarov.telegramgpt.i14y.TGMessage).%OpenId(msgId).ChatId
+
+    return ##class(Telegram.JSONContainer).%OpenId(msgId).Data.message.chat.id
 }
 
 XData DTL [ XMLNamespace = "http://www.intersystems.com/dtl" ]

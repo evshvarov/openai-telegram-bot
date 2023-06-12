@@ -104,4 +104,4 @@ w $system.Util.GetEnviron("OPENAPI_KEY")
 
 d ##class(shvarov.telegramgpt.Setup).Init($system.Util.GetEnviron("TG_BOT_TOKEN"),$system.Util.GetEnviron("OPENAPI_KEY"))
 
-
+d ##class(shvarov.telegramgpt.Setup).Init("Token","Key")
